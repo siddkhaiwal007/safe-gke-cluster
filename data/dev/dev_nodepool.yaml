@@ -1,0 +1,15 @@
+type: nodepool
+name: dev-001
+product: dev-prd
+team_dist: dev_dist
+env: dev
+machine_type: e2-small
+min_count: 1
+max_count: 5
+pods_per_node: 16
+local_ssd_count: 0
+local_ssd_ephemeral_count: 0
+disk_size_gb: 10
+disk_type: pd-standard
+image_type: COS
+initial_node_count: 1
