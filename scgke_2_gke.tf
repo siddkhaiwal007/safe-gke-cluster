@@ -13,7 +13,7 @@ data "google_project" "service_project" {
   project_id = var.project_id
 }
 
-// Create a service account with hard coded role and account id.
+// Create a service account with hard coded role and account id for security.
 resource "google_service_account" "gke-sa" {
   project = var.project_id
   account_id = local.service_account
